@@ -23,6 +23,17 @@ body{
     margin-right: 30px;
 }
 
+
+.nav-icons{
+    color: #35475C;
+}
+
+.nav-icons:hover{
+    
+    filter: invert(50%) sepia(32%) saturate(703%) hue-rotate(149deg) brightness(89%) contrast(90%);
+
+}
+
 .tab {
     color: #35475C !important;
     font-weight: 600;
