@@ -1,4 +1,5 @@
-
+@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
 html{
     scroll-behavior: smooth;
 }
@@ -744,6 +745,94 @@ body{
     background: #ffffff;
     border: 2.5px solid #5D98AA;
 }
+
+.footer-header{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #35475C;
+}
+
+.footer-text{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #35475C;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer-text ul{
+    list-style-type: none;
+}
+
+.footer-text a{
+    color: #35475C;
+}
+
+.footer-text li::before {
+    content: '';
+    margin-left: -40px;
+}
+
+.footer-text a:hover{
+    text-decoration: none;
+}
+
+.social-media-icons{
+    margin-left: -40px;
+    width: 20vw;
+}
+
+.social-media-icons i{
+    font-size: 1.4rem;
+    color: #35475C;
+}
+
+.footer-logo{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 9px;
+    text-transform: capitalize;
+    color: #35475C;
+    margin-top: -5px;
+}
+
+.sub-footer-mid{
+   margin: auto;
+   margin-top: -5px;
+}
+
+.sub-footer-text{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 170%;
+    text-transform: capitalize;
+    color: #A1A9B2;
+}
+
+.sub-footer-text a{
+    color: #A1A9B2;
+}
+
+.sub-footer-text a:hover{
+    text-decoration: none;
+    color: #35475C;
+}
+
+.designed-by{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #A1A9B2;
+    margin-right: 15px ;
+    margin-top: -5px;
+}
+
 
 /* text animation */
 .reveal{
