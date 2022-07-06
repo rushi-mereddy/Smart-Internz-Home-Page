@@ -227,12 +227,16 @@ body{
     text-align: center;
 }
 
+.rank-count{
+    margin-left: 10px;
+}
+
 .line{
-    width: 124px;
-    height: 0px;
+    width: 0px;
+    height: 124px;
+    background-color: #E6DECA ;
     margin-right: 5px;
-    border: 2.18432px solid #E6DECA;
-    transform: rotate(90deg);
+    border: 1.5px solid #E6DECA;
 }
 
 .numbers{
