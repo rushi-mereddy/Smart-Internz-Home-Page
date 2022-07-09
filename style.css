@@ -211,6 +211,13 @@ body{
     text-align: left;
 }
 
+.platform-p{
+    color:#35475C; 
+    width: 50vw; 
+    text-transform: 
+    capitalize; margin: auto;
+}
+
 .timestamp{
     color: rgba(53, 71, 92, 0.7);
 }
@@ -266,6 +273,13 @@ body{
     font-size: 11.6497px;
     text-transform: capitalize;
     color: #E6DECA;
+}
+
+.rank-p{
+    color:#FFFFFF; 
+    width: 50vw; 
+    text-transform: capitalize; 
+    margin: auto;
 }
 
 .crp{
@@ -494,7 +508,7 @@ marquee .flip-card{
   .carousel-indicators{
     position: relative !important;
   }
-  
+
   .gp-slides{
     height: 100%;
     overflow: hidden !important;
@@ -1027,5 +1041,35 @@ marquee .flip-card{
 
         .journey-p{
             width: 80vw; 
+        }
+
+        .platform-p{ 
+            width: 80vw; 
+            margin: auto;
+            font-size: 13px;
+        }
+
+        .rank-p{
+            width: 80vw; 
+            margin: auto;
+            font-size: 13px;
+        }
+
+        .countdown-row{
+            width: 80vw;
+            margin: auto !important;
+        }
+
+        .rank-count{
+            font-size: 1.5rem;
+        }
+
+        .rank-count img{
+            width: 1rem;
+            height: 1.5rem;
+        }
+
+        .line{
+            height: 3rem;
         }
   }
