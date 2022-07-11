@@ -90,7 +90,7 @@ body{
 
 .head-text{
     padding-top: 20vh;
-    font-family: 'Gilroy ExtraBold';
+    font-family: 'Gilroy ExtraBold' !important;
     font-weight: 800;
     font-size: 3.5em;
     line-height: 100.8%;
@@ -1006,6 +1006,10 @@ body{
     margin-left: 23%;
 }
 
+.fix-career-img-mobile{
+    display: none;
+}
+
 .fix-career-text{
     font-family: 'Permanent Marker';
     font-weight: 400;
@@ -1314,7 +1318,8 @@ body{
         font-weight: 800;
         font-size: 20px;
         text-align: center;
-        width: 100vw;
+        margin: auto;
+
     }
 
     .ri-sub-head{
@@ -1354,6 +1359,10 @@ body{
     .fix-career-text{
         font-weight: 400;
         font-size: 14.9653px;
+    }
+
+    .fix-career-text img{
+        width: 80%;
     }
 
     .fix-career-btn-a, .fix-career-btn-b{
