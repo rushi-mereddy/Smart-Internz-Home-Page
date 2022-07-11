@@ -395,7 +395,7 @@ body{
 .nav-pills .nav-link{
     color: #ffffff;
     background: #A1A9B2;
-    border: 1.60606px solid #FFFFFF;
+    border: none;
     width: 105px;
     height: 46.58px;
     font-family: 'Open Sans';
@@ -407,13 +407,14 @@ body{
     justify-content: center;
     text-transform: capitalize;
     margin-bottom: 0px !important;
+    border-radius: 0% !important;
 
 }
 
 .nav-pills .nav-link.active{
     color: #ffffff;
     background: #76B4C8 !important;
-    border: 2.01985px solid #FFFFFF !important;
+    border: none;
     width: 118.31px;
     height: 58.58px;
     font-size: 16.1588px;
@@ -1191,6 +1192,20 @@ body{
 
   }
 
+  @media screen and (max-width: 770px){
+    .pc-map{
+        display: none;
+    }
+    .mobile-map{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+  }
+
   @media screen and (max-width: 680px){
     .head-text{
         font-size: 26px;
@@ -1287,7 +1302,6 @@ body{
     .gp-head{
         font-weight: 800;
         font-size: 20px;
-        width: 100vw;
     }
 
     .gp-p{
@@ -1354,9 +1368,14 @@ body{
     }
 
     .fix-career-img{
-        width: 100%;
+        width: 100vw;
         margin: auto !important;
         padding-top: 20px;
+        margin-left: 0% !important;
+    }
+
+    .fix-career-img-mobile{
+        width: 70vw;
     }
 
     .reviewer-sign{
@@ -1366,15 +1385,6 @@ body{
 
     .only-for-pc{
         display: none;
-    }
-
-    .mobile-map{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
-        
     }
 
     .ri-button{
