@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c011661c70.js" crossorigin="anonymous"></script>
     <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet">
-                
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Smart Internz Home Page</title>
 </head>
 <body>
@@ -27,10 +27,10 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="nav-logo">
+        <img src="Logo SmartInternz.svg" alt="SmartInternz">
+      </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <div class="nav-logo">
-          <img src="Logo SmartInternz.svg" alt="SmartInternz">
-        </div>
         <div class="nav-mid">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
@@ -48,19 +48,47 @@
           </ul>
         </div>
         <div class="nav-right">
-          <a href="#" class="nav-icons">
-              <img src="Cart.png" alt="" style="padding: 0.8rem;">
-            </a>
-          <a href="#" class="nav-icons">
-            <img src="Profile.png" alt="" style="padding: 0.8rem;">
-          </a>
-          <a href="#" class="nav-icons" style="filter: none;">
-            <img src="Flag.png" alt="" style="padding: 0.8rem;">
-          </a>
-          <a href="#" class="nav-icons">
-            <img src="Menu.png" alt="" style="padding: 0.8rem;">
-          </a>
-        </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown pr-1">
+              <a class="nav-link tab" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login/Sign up</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item">
+                  <span>Student</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span>Company</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span>Educator</span>
+                </a>
+              </div>
+             </li>
+          
+            
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-icons" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="Menu.svg" alt="">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a href="#" class="dropdown-item">
+                  <strong>Link 1</strong>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <strong>Link 2</strong>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <strong>Link 3</strong>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <strong>Link 4</strong>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <strong>Link 5</strong>
+                </a>
+              </div>
+            </li>
+          </ul>
       </div>
   </nav>
 
@@ -79,7 +107,7 @@
     <div class="container">
       <div class="head-text animate__animated animate__fadeInUp">Freshman to developer</div>
       <div class="sub-head animate__animated animate__fadeInUp">Build <b>real-world projects</b>, collaborate with <b>mentors</b> and access <b>global Internships</b>
-        <div class="row banner-btns">
+        <div class="row banner-btns" style="margin-left: 0px;">
           <div>
             <button class="cac-btn" type="button"> Choose A Career Plan </button>
           </div>
@@ -176,26 +204,26 @@
     <div class="container reveal" style="padding-bottom: 12vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 style="font-size: 30px; color: #ffffff; font-weight: 800;">The Journey</h1>
+          <h1 class="journey-head">The Journey</h1>
         </div>
           <p class="reveal journey-p" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aenean in tristique elit hendrerit convallis nulla adipiscing. Sit lorem leo nunc mattis facilisis facilisis.</p>
       </div>
       <div class="journey-icons">
         <div class="row mt-5 reveal">
           <div class="col journey-icon">
-            <img src="icons/career.png" alt=""><br><br>
+            <img src="icons/career.svg" alt=""><br><br>
             <span class="journey-text">Join a Career Program</span>
           </div>
           <div class="col journey-icon">
-            <img src="icons/job role.png" alt=""><br><br>
+            <img src="icons/job role.svg" alt=""><br><br>
             <span class="journey-text">Select a Job Role</span>
           </div>
           <div class="col journey-icon">
-            <img src="icons/mentor.png" alt=""><br><br>
+            <img src="icons/mentor.svg" alt=""><br><br>
             <span class="journey-text">Build Mentor Guided Projects</span>
           </div>
           <div class="col journey-icon">
-            <img src="icons/remote.png" alt=""><br><br>
+            <img src="icons/remote.svg" alt=""><br><br>
             <span class="journey-text">Access Remote Internships</span>
           </div>
         </div>
@@ -209,14 +237,19 @@
     <div class="container reveal" style="padding-bottom: 12vh;">
         <div class="text-container">
           <div style="margin-bottom:3vh;">
-            <h1 style="text-transform: uppercase; color: #35475C;  font-weight: 800; font-size: 30px;">How our platform Works</h1>
+            <h1 class="platform-head">How our platform Works</h1>
           </div>
           <p class="reveal platform-p" >Level-up your skills by solving real-world problems under the guidance of mentors and Showcase your experience to companies for global internships</p>
         </div>
 
         <div class="row mt-5 reveal" >
           <div class="col">
-            <img src="images/Video1.png" alt="">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item"  width="594px" height="336px" src="videos/video1.mp4"></iframe>
+            </div>
+            <div class="play-btn">
+              <button class="play">play</button>
+            </div>
             <div class="row mt-2">
               <div class="col-3">
                 <img src="images/sVideo1.png" alt="">
@@ -236,7 +269,7 @@
               <div class="platform-sub-head">
                 Smartinternz platform
               </div>
-              <p style="text-transform: capitalize; color: #35475C; font-size: 13px; text-align: justify; ">Project-based learning & remote internship platform to prepare the students for the industry. it offers real-world projects in a company-like environment to build the industry needed skills.</p>
+              <p class="platform-sub-p">Project-based learning & remote internship platform to prepare the students for the industry. it offers real-world projects in a company-like environment to build the industry needed skills.</p>
               <div class="platform-sub-head mt-4">
                 Timestamps:
               </div>
@@ -276,7 +309,7 @@
     <div class="container reveal" style="padding-bottom: 12vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 style="text-transform: uppercase; color: #ffffff;  font-weight: 800; font-size: 30px;">JOin the ranks of students around the world</h1>
+          <h1 class="rank-head">JOin the ranks of students around the world</h1>
         </div>
         <p class="reveal rank-p">at forage, every student has a chance to get ahead. build your resume, experience what real work looks like and learn critical skills, all amongst the best students across the world</p>
       </div>
@@ -285,8 +318,8 @@
           <div class="line"></div>
           <div class="rank-count">
             <span class="value">200</span>K+ 
-            <div style="margin-top: -2rem">
-              <img src="icons/student.png" alt="" style="padding-top: 15px;">
+            <div class="rank-bottom" style="margin-top: -2rem">
+              <img src="icons/student.svg" alt="" style="padding-top: 15px;">
               <span class="rank-text">student enrollments</span>
             </div>
           </div>  
@@ -294,9 +327,9 @@
         <div class="col numbers number-item">
           <div class="line"></div>
           <div class="rank-count">
-            <span class="value">2000</span>+
-              <div style="margin-top: -2rem">
-                <img src="icons/project.png" alt="" style="padding-top: 15px;">
+            <span class="value">2000</span>+ 
+              <div class="rank-bottom" style="margin-top: -2rem">
+                <img src="icons/project.svg" alt="" style="padding-top: 15px;">
                 <span class="rank-text">Project templates</span>
               </div>
           </div>
@@ -305,8 +338,8 @@
           <div class="line"></div>
           <div class="rank-count">
             <span class="value">250</span>K+
-              <div style="margin-top: -2rem">
-                <img src="icons/hours.png" alt="" style="padding-top: 15px;">
+              <div class="rank-bottom" style="margin-top: -2rem">
+                <img src="icons/hours.svg" alt="" style="padding-top: 15px;">
                 <span class="rank-text">Mentoring Hours</span>
               </div>
           </div>
@@ -314,9 +347,9 @@
         <div class="col numbers number-item">
           <div class="line"></div>
           <div class="rank-count">
-            <span class="value" style="margin-left: -7rem;">12</span>
-              <div style="margin-top: -2rem">
-                <img src="icons/job roles.png" alt="" style="padding-top: 15px;">
+            <span class="value" style="text-align: left;">12</span>
+              <div class="rank-bottom" style="margin-top: -2rem">
+                <img src="icons/job roles.svg" alt="" style="padding-top: 15px;">
                 <span class="rank-text">emerging job roles</span>
               </div>
           </div>
@@ -326,19 +359,21 @@
   </div>
 
   <!-- career readiness programs -->
-
+    
   <div class="crp">
     <div class="container reveal" style="padding-bottom: 12vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 style="text-transform: uppercase; color: #35475C;  font-weight: 800; font-size: 30px;">career readiness programs</h1>
+          <h1 class="crp-head">career readiness programs</h1>
         </div>
-        <p style="color:#35475C; width: 50vw; text-transform: capitalize; margin: auto;" class="reveal" >Let us transform you from fresher to experienced</p>
+        <p class="reveal crp-p" >Let us transform you from fresher to experienced</p>
       </div>
-      <div class="cards reveal" style="margin: auto;">
-        <div class="row">
-          <div class="col">
-            <div class="card crp-card" style="width: 18rem; margin-top: 30px;">
+
+      <!-- PC View -->
+      <div class="cards-pc reveal" style="margin: auto; margin-top: 3rem;">
+        <div class="row" style="margin-left: 80px;">
+          <div class="col-4 crp-card-1">
+            <div class="card crp-card" style=" width: 18rem; margin-top: 30px;">
               <div class="card-body">
                 <h5 class="inr-head">Beginner</h5>
                 <h1 class="inr">INR. 4999</h1>
@@ -358,8 +393,8 @@
               </div>
             </div> 
           </div>
-          <div class="col">
-            <div class="card crp-card" style="width: 21rem; margin-right: 45px;">
+          <div class="col-4">
+            <div class="card crp-card" style="width: 21rem;">
               <div class="card-body">
                 <h5 class="inr-head">Practitioner</h5>
                 <h1 class="inr">INR. 9999</h1>
@@ -381,7 +416,7 @@
               </div>
             </div> 
           </div>
-          <div class="col">
+          <div class="col-3">
             <div class="card crp-card" style="width: 18rem; margin-top: 30px;">
               <div class="card-body">
                 <h5 class="inr-head">Developer</h5>
@@ -404,23 +439,107 @@
           </div>
         </div>
       </div> 
+
+      <!-- Mobile view -->
+      <div class="cards-mobile reveal mt-5">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item mx-auto" role="presentation">
+            <a class="nav-link" id="pills-Beginner-tab" data-toggle="pill" href="#pills-Beginner" role="tab" aria-controls="pills-home" aria-selected="false">Beginner</a>
+          </li>
+          <li class="nav-item mx-auto" role="presentation">
+            <a class="nav-link active" id="pills-Practitioner-tab" data-toggle="pill" href="#pills-Practitioner" role="tab" aria-controls="pills-profile" aria-selected="true">Practitioner</a>
+          </li>
+          <li class="nav-item mx-auto" role="presentation">
+            <a class="nav-link" id="pills-Developer-tab" data-toggle="pill" href="#pills-Developer" role="tab" aria-controls="pills-contact" aria-selected="false">Developer</a>
+          </li>
+        </ul>
+        <div class="tab-content" style="margin-top: -2px;" id="pills-tabContent">
+          <div class="tab-pane fade" id="pills-Beginner" role="tabpanel" aria-labelledby="pills-Beginner-tab">
+            <div class="card crp-card-mobile">
+              <div class="card-body">
+                <h5 class="inr-head">Beginner</h5>
+                <h1 class="inr">INR. 4999</h1>
+                <p class="card-text">
+                  <ul class="crp-list">
+                    <li>2 basic projects</li>
+                    <li>1 intermediate project</li>
+                    <li>12 hrs. of mentoring</li>
+                    <li>1 coding assessement</li>
+                    <li>3 months duration</li>
+                    <li>Access to challenges on the platform</li>
+                    <li>Assess to internships on platform</li>
+                    <li style="color: transparent;"></li>
+                  </ul>
+                </p>
+                <button href="#" class="crp-btn-a">Choose Beginner</button>
+              </div>
+            </div> 
+          </div>
+          <div class="tab-pane fade show active" id="pills-Practitioner" role="tabpanel" aria-labelledby="pills-Practitioner-tab">
+            <div class="card crp-card-mobile">
+              <div class="card-body">
+                <h5 class="inr-head">Practitioner</h5>
+                <h1 class="inr">INR. 9999</h1>
+                <p class="card-text">
+                  <ul class="crp-list" style="color: #000000; font-weight: 400; font-size: 13.1144px;">
+                    <li>2 basic projects</li>
+                    <li>2 intermediate projects</li>
+                    <li>1 advanced project</li>
+                    <li>24 hrs. of mentoring</li>
+                    <li>2 coding assessement</li>
+                    <li>6 months duration</li>
+                    <li>Access to challenges on the platform</li>
+                    <li>Assess to internships on platform</li>
+                    
+                    
+                  </ul>
+                </p>
+                <button href="#" class="crp-btn-a">Choose Practitioner</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Developer" role="tabpanel" aria-labelledby="pills-Developer-tab">
+            <div class="card crp-card-mobile">
+              <div class="card-body">
+                <h5 class="inr-head">Developer</h5>
+                <h1 class="inr">INR. 19999</h1>
+                <p class="card-text">
+                  <ul class="crp-list">
+                    <li>4 basic projects</li>
+                    <li>2 intermediate projects</li>
+                    <li>2 advanced projects</li>
+                    <li>36 Hrs. of mentoring</li>
+                    <li>4 coding assessement</li>
+                    <li>12 months duration</li>
+                    <li>Access to challenges on the platform</li>
+                    <li>Assess to internships on platform</li>
+                  </ul>
+                </p>
+                <button href="#" class="crp-btn-a">Choose Developer</button>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
+  
   <!-- guided projects -->
 
   <div class="gp" style="margin-top: -100px;">
     <div class="container reveal" style="padding-bottom: 12vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 style="text-transform: uppercase; color: #35475C;  font-weight: 800; font-size: 30px;">guided projects</h1>
+          <h1 class="gp-head">guided projects</h1>
         </div>
-        <p style="color:#35475C; width: 50vw; text-transform: capitalize; margin: auto;" class="reveal" >build practical skills through hands-on projects supported by mentors </p>
+        <p class="reveal gp-p" >build practical skills through hands-on projects supported by mentors </p>
       </div>
 
       <div class="gp-cards reveal">
       
-        <div class="row" style="margin-top: 30px; justify-content: center;">
+        <div class="row gp-all-cards" style="margin-top: 30px; justify-content: center;">
         
           <div>
 
@@ -434,47 +553,47 @@
           
                 <!--First slide-->
                 <div class="carousel-item active">
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">Active Slide<br><br> </h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
+                  <a href="#">
+                    <div class="col-4" style="float:left">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card" style="width: 19rem;">
+                              <div class="card-body">
+                                <h5 class="gp-card-title">car perfomance prediction using machine learning </h5>
+                                <div class="gp-rating">
+                                  <img src="icons/star.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
+                  
+                                  <img src="icons/time.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
+                  
+                                  <img src="icons/hardness.png" alt="">
+                                  <span class="gp-rate-text">intermediate</span>
                                 </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
+                                <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
+                                <div class="gp-technologies">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <div class="gp-tech">
+                                        Python
+                                      </div>
+                                    </div>
+                                    <div class="col" style="margin-left: -25px;">
+                                      <div class="gp-tech">
+                                        data preprocessing techniques
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                  <div class="row mt-2">
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        machine learning
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        Flask Integration
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -482,125 +601,49 @@
                             </div>
                           </div>
                         </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
                     </div>
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
+                  </a> 
+                  <a href="#">
+                    <div class="col-4" style="float:left">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card" style="width: 19rem;">
+                              <div class="card-body">
+                                <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
+                                <div class="gp-rating">
+                                  <img src="icons/star.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
+                  
+                                  <img src="icons/time.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
+                  
+                                  <img src="icons/hardness.png" alt="">
+                                  <span class="gp-rate-text">intermediate</span>
                                 </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
+                                <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
+                                <div class="gp-technologies">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <div class="gp-tech">
+                                        Python
+                                      </div>
+                                    </div>
+                                    <div class="col" style="margin-left: -25px;">
+                                      <div class="gp-tech">
+                                        data preprocessing techniques
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                  <div class="row mt-2">
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        machine learning
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        Flask Integration
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -608,67 +651,106 @@
                             </div>
                           </div>
                         </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
                     </div>
-                  </div>                    
+                  </a>  
+                  <a href="#">
+                    <div class="col-4" style="float:left">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card" style="width: 19rem;">
+                              <div class="card-body">
+                                <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
+                                <div class="gp-rating">
+                                  <img src="icons/star.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
+                  
+                                  <img src="icons/time.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
+                  
+                                  <img src="icons/hardness.png" alt="">
+                                  <span class="gp-rate-text">intermediate</span>
+                                </div>
+                                <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
+                                <div class="gp-technologies">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <div class="gp-tech">
+                                        Python
+                                      </div>
+                                    </div>
+                                    <div class="col" style="margin-left: -25px;">
+                                      <div class="gp-tech">
+                                        data preprocessing techniques
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mt-2">
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        machine learning
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        Flask Integration
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </a>  
+                                     
                 </div>
                 <!--/.First slide-->
           
                 <!--Second slide-->
                 <div class="carousel-item">
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">Still did not add scrolling <br><br> </h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
+            
+                  <a href="#">
+                    <div class="col-4" style="float:left">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card" style="width: 19rem;">
+                              <div class="card-body">
+                                <h5 class="gp-card-title">car perfomance prediction using machine learning </h5>
+                                <div class="gp-rating">
+                                  <img src="icons/star.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
+                  
+                                  <img src="icons/time.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
+                  
+                                  <img src="icons/hardness.png" alt="">
+                                  <span class="gp-rate-text">intermediate</span>
                                 </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
+                                <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
+                                <div class="gp-technologies">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <div class="gp-tech">
+                                        Python
+                                      </div>
+                                    </div>
+                                    <div class="col" style="margin-left: -25px;">
+                                      <div class="gp-tech">
+                                        data preprocessing techniques
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                  <div class="row mt-2">
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        machine learning
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        Flask Integration
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -676,125 +758,49 @@
                             </div>
                           </div>
                         </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
                     </div>
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
+                  </a> 
+                  <a href="#">
+                    <div class="col-4" style="float:left">
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card" style="width: 19rem;">
+                              <div class="card-body">
+                                <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
+                                <div class="gp-rating">
+                                  <img src="icons/star.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
+                  
+                                  <img src="icons/time.png" alt="">
+                                  <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
+                  
+                                  <img src="icons/hardness.png" alt="">
+                                  <span class="gp-rate-text">intermediate</span>
                                 </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
+                                <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
+                                <div class="gp-technologies">
+                                  <div class="row">
+                                    <div class="col-4">
+                                      <div class="gp-tech">
+                                        Python
+                                      </div>
+                                    </div>
+                                    <div class="col" style="margin-left: -25px;">
+                                      <div class="gp-tech">
+                                        data preprocessing techniques
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                  <div class="row mt-2">
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        machine learning
+                                      </div>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
+                                    <div class="col">
+                                      <div class="gp-tech">
+                                        Flask Integration
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -802,418 +808,28 @@
                             </div>
                           </div>
                         </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-
-                <!-- Third slide -->
-                <div class="carousel-item">
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
+                  </a>  
+                  <a href="#">
+                    <div class="col-4" style="float:left">                      
                       <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">Still did not add scrolling <br><br> </h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                        <div class="flip-card-last" style="width: 19rem; height: 340px;">
+                          <div class="card-body">
+                            <div class="inner-box">
+                              <div class="flip-back-text"> DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span></div>
                             </div>
                           </div>
                         </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
+                      </div>                        
                     </div>
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Fourth slide -->
-
-                <div class="carousel-item">
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">Still did not add scrolling <br><br> </h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain beha vior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-          
-                  <div class="col-md-4" style="float:left">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <div class="card" style="width: 19rem;">
-                            <div class="card-body">
-                              <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
-                              <div class="gp-rating">
-                                <img src="icons/star.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
-                
-                                <img src="icons/time.png" alt="">
-                                <span class="gp-rate-text" style="margin-right: 10px;">8 Hrs.</span>
-                
-                                <img src="icons/hardness.png" alt="">
-                                <span class="gp-rate-text">intermediate</span>
-                              </div>
-                              <p class="card-text gp-text">predict the perfomance of a car to improve certain behavior of the veichle and thus increase efficiency using machine learning</p>
-                              <div class="gp-technologies">
-                                <div class="row">
-                                  <div class="col-4">
-                                    <div class="gp-tech">
-                                      Python
-                                    </div>
-                                  </div>
-                                  <div class="col" style="margin-left: -25px;">
-                                    <div class="gp-tech">
-                                      data preprocessing techniques
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row mt-2">
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      machine learning
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="gp-tech">
-                                      Flask Integration
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div class="flip-card-back">
-                          <div class="inner-box">
-                            <div style="margin-top:50%;">  
-                              <a href="#" class="flip-back-text">
-                                
-                                  DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span>
-                              
-                              </a>
-                            </div>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </a>                               
+                </div>     
               </div>
 
               <!--Indicators-->
               <ol class="carousel-indicators">
                 <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                <li data-target="#multi-item-example" data-slide-to="1"></li>
-                <li data-target="#multi-item-example" data-slide-to="2"></li>
-                <li data-target="#multi-item-example" data-slide-to="3"></li>
-          
+                <li data-target="#multi-item-example" data-slide-to="1"></li>          
               </ol>
               <!--/.Indicators-->
             </div>
@@ -1226,7 +842,7 @@
   <!-- Remote Internship -->
 
   <div class="ri">
-    <div class="container reveal" style="padding-top: 15vh;">
+    <div class="container reveal" style="padding-top: 15vh; padding-left: 23px;" >
       <div class="row">
         <div class="left">
           <div class="ri-head"> 
@@ -1235,16 +851,20 @@
           <div class="ri-sub-head">
             access 1000+ trending tech-internships globally
           </div>
-          <div>
+          <div class="mobile-map">
+            <img src="images/Mobile Map.svg" alt="">
+          </div>
+          <div class="ri-button">
             <button class="ri-btn" type="button"> Discover Internships </button>
           </div>
         </div>
-        <div class="right" style="margin-left: 50px;">
-          <img src="images/Map.png" alt="" style="width:600.61px; height: 359px">
+        <div class="right only-for-pc" style="margin-left: 50px;">
+          <img src="images/Map.svg">
         </div>
       </div>
-      <div class="ri-shortcuts reveal">
-        <div class="row">
+      
+      <div class="reveal">
+        <div class="row ri-shortcuts">
           <div>
             <a href="#" class="link">
               <div class="ri-tech">
@@ -1281,7 +901,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div >
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1290,7 +910,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1299,7 +919,7 @@
               </div>
             </a>
           </div>
-          <div>                  
+          <div class="only-for-pc">                  
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1308,7 +928,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1317,7 +937,7 @@
               </div>
             </a>
           </div>
-          <div>                  
+          <div class="only-for-pc">                  
           <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1326,7 +946,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1335,7 +955,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1344,7 +964,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1353,7 +973,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1362,7 +982,7 @@
               </div>
             </a>
           </div>
-          <div>
+          <div class="only-for-pc">
             <a href="#" class="link">
               <div class="ri-tech">
                 
@@ -1382,13 +1002,38 @@
     <div class="container reveal" style="padding-bottom: 14vh;">
       <div class="text-container">
         <div style="margin-bottom:3vh;">
-          <h1 style="font-weight: 800; font-size: 30px; text-transform: uppercase; color: #35475C; font-family: 'Open Sans';">challenges</h1>
+          <h1 class="challenges-head">challenges</h1>
         </div>
-          <p style="font-family: 'Open Sans'; font-weight: 400; width: 50%; font-size: 17px; text-transform: capitalize; color: #35475C;" class="reveal" >
+          <p class="reveal challenges-p">
             Demonstrate Your skills to industry through challenges. Access top challenges by IBM, AWS, VMware and many more!
           </p>
         <div class="challenges-cards reveal">
-          <div class="row">
+          <div class="row challenges-row" style="margin-left: 0px;">
+            <a href="#" class="challenges-links">
+              <div class="challenges-box">
+                <div class="challenges-box-logo">
+                  <img src="logos/call for code.png" alt="">
+                </div>
+                <div class="challenges-box-text">
+                  <p> Prayudh - Call for Code India Virtual Hackathon 2020</p>                        
+                </div>
+                <div class="row">
+                  <div class="location">
+                    <img src="icons/location.png" alt="">
+                    <span class="location-text">
+                      Remote
+                    </span>
+                  </div>
+                  <div class="date">
+                    <img src="icons/calander.png" alt="">
+                    <span class="location-text">
+                      23.04.2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="challenges-links">
             <div class="challenges-box">
               <div class="challenges-box-logo">
                 <img src="logos/call for code.png" alt="">
@@ -1411,6 +1056,8 @@
                 </div>
               </div>
             </div>
+            </a>
+            <a href="#" class="challenges-links">
             <div class="challenges-box">
               <div class="challenges-box-logo">
                 <img src="logos/call for code.png" alt="">
@@ -1433,28 +1080,7 @@
                 </div>
               </div>
             </div>
-            <div class="challenges-box">
-              <div class="challenges-box-logo">
-                <img src="logos/call for code.png" alt="">
-              </div>
-              <div class="challenges-box-text">
-                <p> Prayudh - Call for Code India Virtual Hackathon 2020</p>                        
-              </div>
-              <div class="row">
-                <div class="location">
-                  <img src="icons/location.png" alt="">
-                  <span class="location-text">
-                    Remote
-                  </span>
-                </div>
-                <div class="date">
-                  <img src="icons/calander.png" alt="">
-                  <span class="location-text">
-                    23.04.2020
-                  </span>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="challenges-explore">
@@ -1482,7 +1108,7 @@
             <div class="carousel-item active">
               <div class="review-card">
                 <div class="row">
-                  <div class="review-image col">
+                  <div class="review-image">
                     <img src="images/reviews/1.png" alt="">
                   </div>
                   <div class="review-text col">
@@ -1499,7 +1125,7 @@
             <div class="carousel-item">
               <div class="review-card">
                 <div class="row">
-                  <div class="review-image col">
+                  <div class="review-image">
                     <img src="images/reviews/2.png" alt="">
                   </div>
                   <div class="review-text col">
@@ -1516,7 +1142,7 @@
             <div class="carousel-item">
               <div class="review-card">
                 <div class="row">
-                  <div class="review-image col">
+                  <div class="review-image">
                     <img src="images/reviews/3.png" alt="">
                   </div>
                   <div class="review-text col">
@@ -1599,7 +1225,7 @@
 
   <div class="fix-career">
     <div class="container">
-      <div class="row">
+      <div class="row" style="margin-left: 0px">
         <div class="fix-career-head reveal">
           <div>
               fix your career position on graph of opportunities
@@ -1608,8 +1234,8 @@
             experience = Skills x Practice + Mentoring <br>
             <img src="images/fix-career-ul.svg" alt="" style="margin-top: -25px; transform: rotate(3.26deg);">
           </div>
-          <div class="row">
-            <div>
+          <div class="row" style="margin-left: 0px;">
+            <div class="fix-career-btns">
               <button class="fix-career-btn-a" type="button"> Choose A Career Plan </button>
             </div>
             <div>
@@ -1773,7 +1399,7 @@
           
   <!-- Java Script -->
           
-          
+  
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script>
 
@@ -1877,6 +1503,22 @@
     dots[slideIndex-1].className += " w3-white";
   }
 
+
+// Career Readiness mobile
+ 
+function openCity(evt, level) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("diff");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(level).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
   </script>
 </body>
 </html>
