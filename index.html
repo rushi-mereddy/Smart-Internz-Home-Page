@@ -543,12 +543,12 @@
 
       <div class="gp-cards reveal">
       
-        <div class="row gp-all-cards" style="margin-top: 30px; justify-content: center;">
+        <div class="row gp-all-cards gp-cards-pc" style="margin-top: 30px; justify-content: center;">
         
           <div>
 
             <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-interval="false">
           
               
           
@@ -558,12 +558,12 @@
                 <!--First slide-->
                 <div class="carousel-item active">
                   <a href="#">
-                    <div class="col-m-4" style="float:left">
+                    <div class="col-md-4" style="float:left">
                       <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="card" style="width: 19rem;">
                               <div class="card-body">
-                                <h5 class="gp-card-title">car perfomance prediction using machine learning </h5>
+                                <h5 class="gp-card-title">1 car perfomance prediction using machine learning </h5>
                                 <div class="gp-rating">
                                   <img src="icons/star.png" alt="">
                                   <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
@@ -608,12 +608,13 @@
                     </div>
                   </a> 
                   <a href="#">
-                    <div class="col-m-4" style="float:left">
+                    <div class="col-md-4" style="float:left">
                       <div class="flip-card">
                         <div class="flip-card-inner">
+
                             <div class="card" style="width: 19rem;">
                               <div class="card-body">
-                                <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
+                                <h5 class="gp-card-title">2 car perfomance prediction using machine learning</h5>
                                 <div class="gp-rating">
                                   <img src="icons/star.png" alt="">
                                   <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
@@ -658,12 +659,12 @@
                     </div>
                   </a>  
                   <a href="#">
-                    <div class="col-m-4" style="float:left">
+                    <div class="col-md-4" style="float:left">
                       <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="card" style="width: 19rem;">
                               <div class="card-body">
-                                <h5 class="gp-card-title">car perfomance prediction using machine learning</h5>
+                                <h5 class="gp-card-title">3 car perfomance prediction using machine learning</h5>
                                 <div class="gp-rating">
                                   <img src="icons/star.png" alt="">
                                   <span class="gp-rate-text" style="margin-right: 10px;">4.6 <span style="font-weight:lighter;">(86)</span></span>
@@ -715,7 +716,7 @@
                 <div class="carousel-item mx-auto">
             
                   <a href="#">
-                    <div class="col-m-4" style="float:left">
+                    <div class="col-md-4" style="float:left">
                       <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="card" style="width: 19rem;">
@@ -765,7 +766,7 @@
                     </div>
                   </a> 
                   <a href="#">
-                    <div class="col-m-4" style="float:left">
+                    <div class="col-md-4" style="float:left">
                       <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="card" style="width: 19rem;">
@@ -815,9 +816,9 @@
                     </div>
                   </a>  
                   <a href="#">
-                    <div class="col-m-4" style="float:left">                      
+                    <div class="col-md-4" style="float:left">                      
                       <div class="flip-card-inner">
-                        <div class="flip-card-last" style="width: 19rem; height: 340px;">
+                        <div class="flip-card-last" style="width: 19rem; height: 350px;">
                           <div class="card-body">
                             <div class="inner-box">
                               <div class="flip-back-text"> DISCOVER 2000+ GUIDED PROJECTS<span style="text-decoration: underline;"> HERE</span></div>
@@ -844,7 +845,6 @@
   </div>
 
   <!-- Remote Internship -->
-
   <div class="ri">
     <div class="container reveal" style="padding-top: 15vh; padding-left: 23px;" >
       <div class="row">
@@ -852,6 +852,7 @@
           <div class="ri-head"> 
             Remote Internships
           </div>
+          
           <div class="ri-sub-head">
             access 1000+ trending tech-internships globally
           </div>
@@ -1107,7 +1108,7 @@
         <p style="color:#35475C; width: 50vw; text-transform: capitalize; margin: auto;" class="reveal" >What students say about this guided project</p>
       </div>
       <div class="review-card-container" style="margin-top: 3rem;">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="review-card">
@@ -1480,35 +1481,6 @@
     });
   }
 
-
-  // cards slider
-
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " w3-white";
-  }
 
 
 // Career Readiness mobile
