@@ -652,10 +652,15 @@ body{
     position: relative !important;
   }
 
-  .gp-slides{
+  /* .gp-slides{
     height: 100%;
     overflow: hidden !important;
+  } */
+
+  .col-md-4{
+    width: auto !important;
   }
+
 
 /* remote internship */
 
@@ -700,6 +705,10 @@ body{
     margin-top: 15vh;
     border: none;
     margin-left: 0px;
+}
+
+.abcdef{
+    overflow: scroll !important;
 }
 
 .ri-btn:hover{
@@ -900,6 +909,13 @@ body{
     float: right;
     margin-top: 50px;
     margin-right: 80px;
+}
+
+.fa-arrow-circle-left:before, 
+.fa-circle-arrow-left:before,
+.fa-arrow-circle-right:before, 
+.fa-circle-arrow-right:before{
+    color: #35475C;
 }
 
 .carousel-control-prev i{
@@ -1200,6 +1216,16 @@ body{
         margin: auto;
     }
 
+    .gp-cards-pc{
+        display: none !important;
+    }
+
+    .gp-cards-mobile{
+        display: block;
+        width: max-content;
+        margin: auto auto;
+    }
+
   }
 
   @media screen and (max-width: 770px){
@@ -1324,14 +1350,18 @@ body{
         justify-content: center !important;
         align-items: center !important;
         margin: auto !important;
-        /* padding: 20% !important; */
+    }
+
+    .carousel-inner{
+        overflow: hidden !important;
     }
 
     .ri-head{
+        width: 95vw;
         font-weight: 800;
         font-size: 20px;
         text-align: center;
-        margin: auto;
+        margin: auto !important;; 
 
     }
 
@@ -1486,6 +1516,7 @@ body{
 
         .review-image{
             margin: auto !important;
+            padding-right: 30px;
         }
 
         .rank-head{
