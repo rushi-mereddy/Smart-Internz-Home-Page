@@ -23,6 +23,9 @@ body{
     font-family: 'Gilroy ExtraBold', sans-serif;
 }
 
+.navbar-collapse{
+    background-color: #EDEDEA !important;
+}
 .nav-item{
     margin-right: 30px;
 }
@@ -242,6 +245,7 @@ body{
 }
 
 .platform-sub-head{
+    font-family: 'Open Sans';
     text-transform: uppercase;
     color: #35475C;
     font-weight: 800;
@@ -252,8 +256,8 @@ body{
 .platform-p{
     color:#35475C; 
     width: 50vw; 
-    text-transform: 
-    capitalize; margin: auto;
+    text-transform: capitalize; 
+    margin: auto;
 }
 
 .timestamp{
@@ -271,6 +275,8 @@ body{
     color: rgba(98, 168, 190, 1);
     font-size: 18px;
     font-weight: 800;
+    font-family: 'Open Sans';
+    align-items: bottom;
 }
 
 .plat-explore-link:hover{
@@ -583,7 +589,6 @@ body{
 }
 
 
-
 .flip-card {
     background-color: transparent;
     /* width: 300px;
@@ -838,6 +843,7 @@ body{
 .reviews{
     text-align: center;
     background-color: #EFEFEF;
+    overflow: hidden;
 }
 
 .review-card-container{
@@ -1294,7 +1300,7 @@ body{
     .crp-p{
         font-weight: 400;
         font-size: 13px;
-        width: max-content;
+        width: 90vw;
     }
 
     .crp-list{
@@ -1312,6 +1318,13 @@ body{
         font-weight: 400;
         font-size: 13px;
         width: 90vw;
+    }
+
+    .carousel-item{
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto !important;
+        /* padding: 20% !important; */
     }
 
     .ri-head{
@@ -1377,10 +1390,10 @@ body{
     }
 
     .fix-career-img{
-        width: 100vw;
+        max-width: 100vw !important;
         margin: auto !important;
         padding-top: 20px;
-        margin-left: 0% !important;
+        margin-left: -1.5vw !important;
     }
 
     .fix-career-img-mobile{
