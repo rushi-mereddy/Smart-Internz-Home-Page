@@ -1216,9 +1216,9 @@ body{
         margin: auto;
     }
 
-    .gp-cards-pc{
+    /* .gp-cards-pc{
         display: none !important;
-    }
+    } */
 
     .gp-cards-mobile{
         display: block;
@@ -1346,15 +1346,11 @@ body{
         width: 90vw;
     }
 
-    .carousel-item{
+    /* .carousel-item{
         justify-content: center !important;
         align-items: center !important;
         margin: auto !important;
-    }
-
-    .carousel-inner{
-        overflow: hidden !important;
-    }
+    } */
 
     .ri-head{
         width: 95vw;
@@ -1523,9 +1519,9 @@ body{
             font-size: 18px !important;
         }
 
-        .review-card-container{
+        /* .review-card-container{
             width: 100vw;
-        }
+        } */
 
         .carousel-control-prev .carousel-control-next{
             position: absolute !important;
