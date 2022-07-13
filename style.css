@@ -156,7 +156,6 @@ body{
 
 /* Chat Bot */
 .chatbox{
-
     position: fixed;
     bottom: 0.5px;
     right: 46px;
@@ -167,6 +166,20 @@ body{
     height: 44px;
     background: #E6DECA;
     box-shadow: 1px -2px 11px rgba(0, 0, 0, 0.03);
+}
+
+.chatbox-mobile{
+    display: none !important;
+    position: fixed;
+    bottom: 25px;
+    padding-right: 10px;
+    right: 0px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: #E6DECA;
+    box-shadow: 1px -2px 11px rgba(0, 0, 0, 0.03);
+    z-index: 1;
 }
 
 .c-text{
@@ -588,6 +601,12 @@ body{
     padding-right: 1px;
 }
 
+.gp-cards-mobile{
+    display: none !important;
+    /* width: 80vw !important; */
+    overflow: scroll;
+}
+
 
 .flip-card {
     background-color: transparent;
@@ -677,6 +696,7 @@ body{
     align-items: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    display: block;
 }
 
 .ri-sub-head{
@@ -1195,6 +1215,10 @@ body{
     background: #ffffff;
     background-size: contain;
   }
+
+  .footer-mobile{
+    display: none;
+  }
     
 
   @media screen and (max-width: 991px){
@@ -1216,14 +1240,12 @@ body{
         margin: auto;
     }
 
-    /* .gp-cards-pc{
+    .gp-cards-pc{
         display: none !important;
-    } */
+    }
 
     .gp-cards-mobile{
-        display: block;
-        width: max-content;
-        margin: auto auto;
+        display: flex !important;
     }
 
   }
@@ -1240,9 +1262,25 @@ body{
         padding-top: 20px;
     }
 
+    .footer-pc{
+        display: none !important;
+    }
+
+    .footer-mobile{
+        display: block;
+    }
+
   }
 
   @media screen and (max-width: 680px){
+
+    .chatbox{
+        display: none !important;
+    }
+
+    .chatbox-mobile{
+        display: block !important;
+    }
     .head-text{
         font-size: 26px;
         padding-top: 12vh;
