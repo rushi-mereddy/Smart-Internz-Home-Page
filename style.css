@@ -1159,10 +1159,11 @@ body{
     margin-top: -5px;
 }
 
-.sub-footer-mid{
-   margin: auto;
+/* .sub-footer-mid{
+   justify-content: center;
+   align-items: center;
    margin-top: -5px;
-}
+} */
 
 .sub-footer-text{
     font-family: 'Open Sans';
@@ -1171,6 +1172,9 @@ body{
     line-height: 170%;
     text-transform: capitalize;
     color: #A1A9B2;
+    text-align: center;
+    margin-top: -35px;
+    padding-bottom: 10px;
 }
 
 .sub-footer-text a{
@@ -1190,6 +1194,7 @@ body{
     color: #A1A9B2;
     margin-right: 15px ;
     margin-top: -5px;
+    text-align: right;
 }
 
 .navbar-toggler{
@@ -1382,6 +1387,10 @@ body{
         font-weight: 400;
         font-size: 13px;
         width: 90vw;
+    }
+
+    .sub-footer-text{
+        margin: auto !important;
     }
 
     /* .carousel-item{
