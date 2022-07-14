@@ -1346,7 +1346,9 @@ body{
     }
 
     .logos-mobile{
-        display: block;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .platform-head{
@@ -1359,6 +1361,7 @@ body{
 
     .crp{
         margin: auto;
+        overflow: overlay;
     }
 
     .crp-head{
