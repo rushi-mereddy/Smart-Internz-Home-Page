@@ -614,7 +614,7 @@ body{
     height: 300px; */
     perspective: 1000px;
     margin: 25px;
-/*     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2); */
+    /* box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2); */
   }
 
 .flip-card:hover{
@@ -625,7 +625,7 @@ body{
     background-color: #C7B08C !important;
     perspective: 1000px;
     margin: 25px;
-/*     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2); */
+    /* box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2); */
   }
 
   .flip-card-last:hover{
