@@ -273,6 +273,7 @@ body{
     margin: auto;
 }
 
+
 .timestamp{
     color: rgba(53, 71, 92, 0.7);
 }
@@ -299,11 +300,34 @@ body{
 }
 
 .platform-sub-p{
+    font-family: 'Open Sans';
     text-transform: capitalize; 
     color: #35475C; 
     font-size: 13px; 
-    text-align: justify;
+    text-align: left;
 }
+
+.videos{
+    justify-content: center;
+    align-items: center;
+    width: 37vw;
+}
+
+.videos button{
+    border: none;
+}
+
+.videos-img{
+    width: 9vw;
+    height: auto;
+}
+
+.video-js {
+  width: 37vw;
+  height: 21vw;
+}
+
+
 .rank{
     background: #808A96;
 }
@@ -810,7 +834,7 @@ body{
     filter: invert(50%) sepia(100%) saturate(10%) hue-rotate(170deg) brightness(105%) contrast(100%);
 }
 
-.challenges-box-logo img:hover{
+.challenges-box >.challenges-box-logo img:hover{
     cursor: pointer;
     filter: none;
 }
@@ -1253,6 +1277,16 @@ body{
         display: flex !important;
     }
 
+    .video-js{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .videos{
+        width: 100%;
+    }
+
   }
 
   @media screen and (max-width: 770px){
@@ -1275,7 +1309,14 @@ body{
         display: block;
     }
 
+    .videos-img{
+        width: 20vw !important;
+        height: auto;
+    }
+
   }
+
+
 
   @media screen and (max-width: 680px){
 
