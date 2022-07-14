@@ -1468,7 +1468,7 @@ body{
     }
 
     .fix-career-img{
-        max-width: 100vw !important;
+        max-width: 99vw !important;
         margin: auto !important;
         padding-top: 20px;
         margin-left: -1.5vw !important;
