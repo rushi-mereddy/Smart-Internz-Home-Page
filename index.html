@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/quentin" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet" />
     <title>Smart Internz Home Page</title>
 </head>
 <body>
@@ -247,28 +249,54 @@
 
         <div class="row reveal mt-5" >
           <div class="col">
-            <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item"  width="594px" height="336px" src="videos/video1.mp4"></iframe>
-            </div>
-            <!-- <div class="play-btn">
-              <button class="play">play</button>
-            </div> -->
-            <div class="row mt-2">
+            <video id="change"
+            class="video-js vjs-default-skin vjs-big-play-button"
+            controls
+            preload="auto"
+            poster="images/Video1.png"
+            data-setup="{}" >
+              <source src="videos/Video1.mp4" type="video/mp4"></source>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                  >supports HTML5 video</a>
+              </p>
+            </video>
+        
+            <div class="row mt-2 videos">
               <div class="col-3">
-                <img src="images/sVideo1.png" alt="">
+                <button onClick="changevid('videos/video1.mp4');
+                 changeposter('images/Video1.png')
+                 changePara('Paragraph related to video 1')">
+                  <img src="images/sVideo1.png" class="videos-img" alt="Video 1">
+                </button>
               </div>
               <div class="col-3">
-                <img src="images/Video2.png" alt="">
+                <button onClick="changevid('videos/video2.mp4'); 
+                 changeposter('images/Video2.png')
+                 changePara('Paragraph related to video 2')">
+                  <img src="images/Video2.png" class="videos-img" alt="Video 2">
+                </button>
               </div>
               <div class="col-3">
-                <img src="images/Video3.png" alt="">
+                <button onClick="changevid('videos/video3.mp4'); 
+                 changeposter('images/Video3.png')
+                 changePara('Paragraph related to video 3')">
+                  <img src="images/Video3.png" class="videos-img" alt="Video 3">
+                </button>
               </div>
               <div class="col-3">
-                <img src="images/Video4.png" alt="">
+                <button onClick="changevid('videos/video4.mp4'); 
+                changeposter('images/Video4.png')
+                changePara('Paragraph related to video 4')">
+                  <img src="images/Video4.png" class="videos-img" alt="Video 4">
+                </button>
               </div>
             </div>
           </div>
-          <div class="col reveal" style="min-width:400px">
+    
+          <div class="col reveal mt-2" style="min-width:400px">
               <div class="platform-sub-head">
                 Smartinternz platform
               </div>
@@ -298,7 +326,7 @@
             </ul> -->
             <div class="platform-sub-head">Paragraph</div>
             <div class="platform-sup-p">
-             <p class="platform-sub-p">Lipsum dolor sit amet consectetur adipisicing elit. Harum dolor, dolorum facilis doloribus beatae ullam quod fuga! Ducimus praesentium at, nulla in ex excepturi eum adipisci reiciendis! Nobis, repudiandae earum?</p>
+             <p class="platform-sub-p"  id="changeParagraph">Para related to video 1(default+) </p>
             </div>
             <a href="#" target="_blank" class="plat-explore-link">
                 <div style="text-align: left;">
@@ -1800,7 +1828,8 @@
   <script src="https://kit.fontawesome.com/c011661c70.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <!-- <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script> -->
   <script>
 
     // text animation
@@ -1873,7 +1902,19 @@
     });
   }
 
+//video player
 
+function changevid(buttonlink) { 
+    document.getElementById('change').src = buttonlink;
+}
+
+function changeposter(posterlink) { 
+    document.getElementById('change').poster = posterlink;
+}
+
+function changePara(para) { 
+    document.getElementById('changeParagraph').innerHTML = para;
+}
 
 // Career Readiness mobile
  
