@@ -1622,6 +1622,10 @@ body{
             font-size: 18px !important;
         }
 
+        .platform-sub-p{
+            margin-right: 18%;
+        }
+
         /* .review-card-container{
             width: 100vw;
         } */
@@ -1630,3 +1634,13 @@ body{
             position: absolute !important;
         }
   }
+
+@media screen and (max-width: 300px){
+        .mobile-map{
+            width: 70vw;
+        }
+
+        .ri-btn{
+            width: 80%;
+        }
+}
