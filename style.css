@@ -740,6 +740,10 @@ body{
     padding-top: 5vh;
 }
 
+.pc-map{
+    position: sticky;
+}
+
 .mobile-map{
     display: none;
 }
@@ -931,6 +935,11 @@ body{
     align-items: center;
     text-transform: capitalize;
     color: #35475C;
+}
+
+.img-left{
+    margin-left: -200px;
+    position: absolute;
 }
 
 .reviewer-name{
@@ -1278,8 +1287,49 @@ body{
         display: none;
     }
 
+    .ri{
+        justify-content: center !important;
+    }
+
     .ri-button{
         margin: auto;
+    }
+
+    .ri-btn{
+        margin-top: 2vh !important;
+        margin: auto;
+        display: block;
+        text-align: center !important;
+    }
+
+    .ri-head{
+        width: 95vw;
+        text-align: center;
+        margin: auto !important;; 
+
+    }
+
+    .ri-sub-head{
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+    .pc-map{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .mobile-map{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
     }
 
     .gp-cards-pc{
@@ -1306,16 +1356,7 @@ body{
   }
 
   @media screen and (max-width: 770px){
-    .pc-map{
-        display: none;
-    }
-    .mobile-map{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
-    }
+    
 
     .footer-pc{
         display: none !important;
@@ -1479,9 +1520,6 @@ body{
         text-align: center;
     }
 
-    .right{
-        display: none;
-    }
 
     .challenges-head{
         font-weight: 800;
@@ -1584,7 +1622,7 @@ body{
     .ri-button{
         display: flex;
         margin: auto;
-        justify-content: center;
+        align-items: center;
     }
 
     .ri-btn{
@@ -1664,6 +1702,17 @@ body{
         .line{
             height: 8rem;
             margin-top: 2rem;
+        }
+
+
+        .ri-tech{
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            font-size: 8.21px;
+        }
+
+        .ri-shortcuts{
+            justify-content: space-around;
         }
 
         .rank-count{
