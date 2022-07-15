@@ -1584,12 +1584,14 @@ body{
     .ri-button{
         display: flex;
         margin: auto;
-        align-items: center;
         justify-content: center;
     }
 
     .ri-btn{
-        margin-top: 5vh;
+        margin-top: 2vh !important;
+        margin: auto;
+        display: block;
+        text-align: center !important;
     }
 
     .ri-shortcuts{
