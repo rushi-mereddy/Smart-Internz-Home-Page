@@ -1354,6 +1354,10 @@ body{
         width: 50vw;
     }
 
+    .mobile-logo{
+        padding-right: 0px !important;
+    }
+
     .journey-head{
         font-weight: 800;
         font-size: 18px;
@@ -1693,6 +1697,11 @@ body{
 @media screen and (max-width: 300px){
         .mobile-map{
             width: 70vw;
+        }
+
+        .mobile-logo{
+            
+            padding-left: 2px !important;
         }
 
         .ri-btn{
