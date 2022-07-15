@@ -812,6 +812,7 @@ body{
 .challenges-box{
     background: linear-gradient(136.12deg, rgba(220, 224, 231, 0.22) -3.91%, rgba(219, 223, 230, 0.378719) 30.89%, rgba(218, 222, 229, 0.51) 87.28%), #FFFFFF;
     padding: 25px;
+    padding-top: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
     align-items: center;
@@ -847,7 +848,7 @@ body{
     filter: none;
 }
 
-.challenges-box-text{
+.challenges-box-text p{
     color: #35475C;
     font-family: 'Open Sans';
     font-weight: 800;
@@ -1498,14 +1499,27 @@ body{
     }
 
     .challenges-box{
-        width: auto;
+        width: 151.47px;
         max-width: fit-content;
+        height: 114.54px;
+    }
+
+    .challenges-box-text p{
+        font-size: 9px;
+        max-width: 120px;
+        width: max-content;
+        text-align: center;
+        margin: auto;
+        margin-left: -10%;
+        /* margin-bottom: -15px; */
+    }
+
+    .challenges-box-logo img{
+        filter: none;
+        width: 22.84px;
         height: auto;
     }
 
-    .challenges-box-text{
-        font-size: 9px;
-    }
 
     .location-text{
         font-size: 8.73px;
@@ -1580,12 +1594,7 @@ body{
         margin: 0px 0px 0px 0px !important;
     } 
 
-    .challenges-box-logo img{
-        filter: none;
-        width: 22.84px;
-        height: auto;
-    }
-
+   
     .only-for-mobile{
         display: contents;
     }
@@ -1611,6 +1620,10 @@ body{
             width: 80vw; 
             margin: auto;
             font-size: 13px;
+        }
+
+        .challenges-box{
+            margin-right: 8px;
         }
 
         .rank-p{
