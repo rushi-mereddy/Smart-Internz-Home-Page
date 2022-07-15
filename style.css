@@ -1256,6 +1256,10 @@ body{
   .footer-mobile{
     display: none;
   }
+
+  .only-for-mobile{
+    display: none;
+  }
     
 
   @media screen and (max-width: 991px){
@@ -1489,6 +1493,22 @@ body{
 
     .challenges-row{
         justify-content: center;
+        column-count: 2 !important;
+
+    }
+
+    .challenges-box{
+        width: auto;
+        max-width: fit-content;
+        height: auto;
+    }
+
+    .challenges-box-text{
+        font-size: 9px;
+    }
+
+    .location-text{
+        font-size: 8.73px;
     }
 
     .challenges-explore{
@@ -1562,6 +1582,12 @@ body{
 
     .challenges-box-logo img{
         filter: none;
+        width: 22.84px;
+        height: auto;
+    }
+
+    .only-for-mobile{
+        display: contents;
     }
 }
   
