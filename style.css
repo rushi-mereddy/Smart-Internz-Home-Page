@@ -1633,6 +1633,10 @@ body{
         .carousel-control-prev .carousel-control-next{
             position: absolute !important;
         }
+      
+        .social-media-icons{
+            column-count: 7;
+        }
   }
 
 @media screen and (max-width: 300px){
