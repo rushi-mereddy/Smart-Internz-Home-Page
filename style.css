@@ -47,7 +47,8 @@ body{
 }
 
 .dropdown-menu{
-    background-color:  rgba(248, 249, 250, 0.877);
+    background-color:  #EDEDEA !important;
+    border: none !important;
     
 }
 
