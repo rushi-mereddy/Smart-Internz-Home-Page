@@ -1578,7 +1578,7 @@ body{
     }
 
     .only-for-pc{
-        display: none;
+        display: none !important;
     }
 
     .ri-button{
