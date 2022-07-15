@@ -273,6 +273,12 @@ body{
     margin: auto;
 }
 
+.explore-platform{
+    text-align: left;
+    margin-top: 18vh;
+
+}
+
 
 .timestamp{
     color: rgba(53, 71, 92, 0.7);
@@ -305,6 +311,7 @@ body{
     color: #35475C; 
     font-size: 13px; 
     text-align: left;
+    margin-top: 1rem;
 }
 
 .videos{
@@ -1378,8 +1385,9 @@ body{
         margin-top: 25vh;
     }
 
-    .logos{
-        row-gap: 105px;
+    .logos img{
+        margin:auto;
+        padding-top: 1rem;
     }
 
     .logos-pc{
@@ -1387,7 +1395,7 @@ body{
     }
 
     .logos-mobile{
-        display: flex;
+        display: block;
         justify-content: center;
         overflow: hidden;
     }
@@ -1633,7 +1641,7 @@ body{
         .carousel-control-prev .carousel-control-next{
             position: absolute !important;
         }
-      
+
         .social-media-icons{
             column-count: 7;
         }
